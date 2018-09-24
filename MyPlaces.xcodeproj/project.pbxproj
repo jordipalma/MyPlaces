@@ -18,6 +18,7 @@
 		A35B8D9D2153C44F00DF3AC6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8D9C2153C44F00DF3AC6 /* Place.swift */; };
 		A35B8D9F2153F5F800DF3AC6 /* ManagerPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8D9E2153F5F800DF3AC6 /* ManagerPlaces.swift */; };
 		A35B8DA12154211200DF3AC6 /* PlaceTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */; };
+		A35B8DA72158EE9500DF3AC6 /* cosmocaixa.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A35B8D9C2153C44F00DF3AC6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		A35B8D9E2153F5F800DF3AC6 /* ManagerPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerPlaces.swift; sourceTree = "<group>"; };
 		A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTourist.swift; sourceTree = "<group>"; };
+		A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosmocaixa.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		A35B8D822153BCFA00DF3AC6 /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */,
 				A35B8D832153BCFA00DF3AC6 /* AppDelegate.swift */,
 				A35B8D852153BCFA00DF3AC6 /* FirstViewController.swift */,
 				A35B8D872153BCFA00DF3AC6 /* SecondViewController.swift */,
@@ -154,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35B8DA72158EE9500DF3AC6 /* cosmocaixa.png in Resources */,
 				A35B8D902153BCFC00DF3AC6 /* LaunchScreen.storyboard in Resources */,
 				A35B8D8D2153BCFC00DF3AC6 /* Assets.xcassets in Resources */,
 				A35B8D8B2153BCFA00DF3AC6 /* Main.storyboard in Resources */,

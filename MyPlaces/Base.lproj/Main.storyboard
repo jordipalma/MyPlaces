@@ -30,7 +30,7 @@
         <!--My Places-->
         <scene sceneID="1SR-DF-abq">
             <objects>
-                <tableViewController id="Gu5-Ib-38e" sceneMemberID="viewController">
+                <tableViewController id="Gu5-Ib-38e" customClass="FirstViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J24-2h-OAH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,7 +125,7 @@
         <!--My Places-->
         <scene sceneID="AFr-ki-JkJ">
             <objects>
-                <viewController id="WHg-pT-Ies" sceneMemberID="viewController">
+                <viewController id="WHg-pT-Ies" customClass="SecondViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5xF-8S-7ub">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +178,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yn2-v6-pT3"/>
+        <segue reference="K55-Dn-1DO"/>
     </inferredMetricsTieBreakers>
 </document>

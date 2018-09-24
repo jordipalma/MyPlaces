@@ -39,7 +39,7 @@ class FirstViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // Devolver la altura de la fila situada en una posición determinada.
-        return 100
+        return 100 //De moment retornem sempre la mateix aalçada
         
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,16 +55,16 @@ class FirstViewController: UITableViewController {
         // UILabel and UIImageView
         
         var label: UILabel
-        label = UILabel(frame: CGRect(x:0,y:0,width:wt,height:40))
-        let fuente: UIFont = UIFont(name: "Arial", size: 12)!
+        label = UILabel(frame: CGRect(x:100,y:10,width:wt,height:40))
+        let fuente: UIFont = UIFont(name: "Arial", size: 22)!
         label.font = fuente
         label.numberOfLines = 4
-        label.text = "hola"
+        label.text = "cosmo"
         label.sizeToFit()
         cell.contentView.addSubview(label)
         
-        let imageIcon: UIImageView = UIImageView(image: UIImage(named:"sun.png"))
-        imageIcon.frame = CGRect(x:10, y:50, width:50, height:50)
+        let imageIcon: UIImageView = UIImageView(image: UIImage(named:"cosmocaixa"))
+        imageIcon.frame = CGRect(x:5, y:5, width:90, height:90)
         cell.contentView.addSubview(imageIcon)
         
         
