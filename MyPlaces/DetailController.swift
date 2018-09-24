@@ -9,10 +9,13 @@
 import UIKit
 
 class DetailController: UIViewController {
-
+    @IBOutlet weak var constraintHeight: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.constraintHeight.constant = 400
         // Do any additional setup after loading the view.
     }
     
