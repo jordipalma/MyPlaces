@@ -19,8 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let manager : ManagerPlaces = ManagerPlaces.shared()
         
-        let pl = Place(name: "Test Place", description: "More info", image_in: nil )
+        //per mantenir coherència amb la crida
+        let dataImage1 = UIImage(named: "cosmocaixa")!.pngData()
+        let dataImage2 = UIImage(named: "sagradafamilia")!.pngData()
+        
+        let pl = Place(name: "CosmoCaixa", description: "More info", image_in: dataImage1 )
+        let p2 = Place(name: "Sagrada Família", description: "More info", image_in: dataImage2 )
+        
         manager.append(pl)
+        manager.append(p2)
         
         
         return true

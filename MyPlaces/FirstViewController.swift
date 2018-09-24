@@ -36,6 +36,12 @@ class FirstViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Detectar pulsación en un elemento.
+        
+        let p = ManagerPlaces.shared().GetItemAt(position: indexPath.row)
+        
+        print("Element seleccionat a la llista: " + p.name)
+        
+        
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // Devolver la altura de la fila situada en una posición determinada.
@@ -49,6 +55,10 @@ class FirstViewController: UITableViewController {
         cell = UITableViewCell()
         
         let wt: CGFloat = tableView.bounds.size.width
+
+        
+        //
+        let p = ManagerPlaces.shared().GetItemAt(position: indexPath.row)
         
         
         // Add subviews to cell
@@ -59,11 +69,11 @@ class FirstViewController: UITableViewController {
         let fuente: UIFont = UIFont(name: "Arial", size: 22)!
         label.font = fuente
         label.numberOfLines = 4
-        label.text = "cosmo"
+        label.text = p.name
         label.sizeToFit()
         cell.contentView.addSubview(label)
         
-        let imageIcon: UIImageView = UIImageView(image: UIImage(named:"cosmocaixa"))
+        let imageIcon: UIImageView = UIImageView(image: UIImage(data: p.image!))
         imageIcon.frame = CGRect(x:5, y:5, width:90, height:90)
         cell.contentView.addSubview(imageIcon)
         
