@@ -10,6 +10,8 @@ import UIKit
 
 class FirstViewController: UITableViewController {
 
+    let m_provider:ManagerPlaces = ManagerPlaces.shared()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +28,7 @@ class FirstViewController: UITableViewController {
     // TABLE PROTOCOL
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Número de elmentos del manager
-        return ManagerPlaces.shared().GetCount()
+        return m_provider.GetCount()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,9 +39,16 @@ class FirstViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Detectar pulsación en un elemento.
         
-        let p = ManagerPlaces.shared().GetItemAt(position: indexPath.row)
+        let p = m_provider.GetItemAt(position: indexPath.row)
         
         print("Element seleccionat a la llista: " + p.name)
+        
+        //TODO: Pendent de fer el segue al detall.
+        
+        let dc:DetailController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailController") as! DetailController
+        dc.place = p
+        present(dc, animated: true, completion: nil)
+        
         
         
     }
@@ -56,9 +65,7 @@ class FirstViewController: UITableViewController {
         
         let wt: CGFloat = tableView.bounds.size.width
 
-        
-        //
-        let p = ManagerPlaces.shared().GetItemAt(position: indexPath.row)
+        let p = m_provider.GetItemAt(position: indexPath.row)
         
         
         // Add subviews to cell

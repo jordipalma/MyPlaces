@@ -55,7 +55,7 @@
         <!--Detail Controller-->
         <scene sceneID="jcK-Wr-BT0">
             <objects>
-                <viewController id="BBQ-cr-FJq" customClass="DetailController" customModule="MyPlaces" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailController" id="BBQ-cr-FJq" customClass="DetailController" customModule="MyPlaces" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mXm-1z-C9G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,6 +10,7 @@ import UIKit
 
 class DetailController: UIViewController {
     @IBOutlet weak var constraintHeight: NSLayoutConstraint!
+    var place = Place()
     
     
     override func viewDidLoad() {
