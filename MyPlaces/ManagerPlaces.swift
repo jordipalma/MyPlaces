@@ -58,7 +58,7 @@ class ManagerPlaces{
         return places.filter { $0.id == id }[0]
     }
     
-    //eliminar un place per id
+    //eliminar un place
     func remove(_ value:Place){
         self.places = places.filter { $0.id != value.id }
     }
