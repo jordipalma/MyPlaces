@@ -172,6 +172,10 @@
                     </view>
                     <connections>
                         <outlet property="constraintHeight" destination="oaw-Uc-uI5" id="AtB-lM-6nU"/>
+                        <outlet property="imagePicked" destination="j7s-Nd-Fqv" id="BXw-iJ-MrI"/>
+                        <outlet property="textDescription" destination="Y9S-W2-KqC" id="X6M-C0-lwH"/>
+                        <outlet property="textName" destination="M8V-4G-n3Q" id="K77-EM-yVP"/>
+                        <outlet property="viewPicker" destination="ipI-ZZ-WXQ" id="7bN-G3-rd9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTn-YQ-6YG" userLabel="First Responder" sceneMemberID="firstResponder"/>
