@@ -10,7 +10,7 @@ import MapKit
 
 
 class Place{
-    enum PlacesTypes {
+    enum PlacesTypes: Int, Codable {
         case GenericPlace
         case TouristicPlace
     }
@@ -38,6 +38,7 @@ class Place{
     
     init(type:PlacesTypes,name:String,description:String,image_in:Data?){
         self.id = UUID().uuidString
+        self.type = type
         self.name = name
         self.description = description
         self.image = image_in
