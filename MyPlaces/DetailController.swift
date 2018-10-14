@@ -10,6 +10,12 @@ import UIKit
 
 class DetailController: UIViewController {
     @IBOutlet weak var constraintHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var viewPicker: UIPickerView!
+    @IBOutlet weak var imagePicked: UIImageView!
+    @IBOutlet weak var textName: UITextField!
+    @IBOutlet weak var textDescription: UITextView!
+    
     var place:Place? = nil
     
     
