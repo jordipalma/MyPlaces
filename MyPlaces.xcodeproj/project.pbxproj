@@ -20,6 +20,7 @@
 		A35B8DA12154211200DF3AC6 /* PlaceTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */; };
 		A35B8DA72158EE9500DF3AC6 /* cosmocaixa.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */; };
 		A35B8DA92158F76200DF3AC6 /* sagradafamilia.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */; };
+		A3AAA76B2175E93400297351 /* ManagerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AAA76A2175E93400297351 /* ManagerLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTourist.swift; sourceTree = "<group>"; };
 		A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosmocaixa.png; sourceTree = "<group>"; };
 		A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sagradafamilia.png; sourceTree = "<group>"; };
+		A3AAA76A2175E93400297351 /* ManagerLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				A35B8D9C2153C44F00DF3AC6 /* Place.swift */,
 				A35B8D9E2153F5F800DF3AC6 /* ManagerPlaces.swift */,
 				A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */,
+				A3AAA76A2175E93400297351 /* ManagerLocation.swift */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				A35B8DA12154211200DF3AC6 /* PlaceTourist.swift in Sources */,
 				A35B8D9F2153F5F800DF3AC6 /* ManagerPlaces.swift in Sources */,
 				A35B8D882153BCFA00DF3AC6 /* SecondViewController.swift in Sources */,
+				A3AAA76B2175E93400297351 /* ManagerLocation.swift in Sources */,
 				A35B8D842153BCFA00DF3AC6 /* AppDelegate.swift in Sources */,
 				A35B8D862153BCFA00DF3AC6 /* FirstViewController.swift in Sources */,
 				A35B8D9D2153C44F00DF3AC6 /* Place.swift in Sources */,

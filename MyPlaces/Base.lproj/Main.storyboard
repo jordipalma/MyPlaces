@@ -179,8 +179,10 @@
                         <viewLayoutGuide key="safeArea" id="keg-Hg-Ax6"/>
                     </view>
                     <connections>
+                        <outlet property="btnUpdate" destination="JN0-VL-cQH" id="XHr-vj-zYF"/>
                         <outlet property="constraintHeight" destination="oaw-Uc-uI5" id="AtB-lM-6nU"/>
                         <outlet property="imagePicked" destination="j7s-Nd-Fqv" id="BXw-iJ-MrI"/>
+                        <outlet property="scrollView" destination="5SO-xR-BKv" id="vfa-nK-Ogv"/>
                         <outlet property="textDescription" destination="Y9S-W2-KqC" id="X6M-C0-lwH"/>
                         <outlet property="textName" destination="M8V-4G-n3Q" id="K77-EM-yVP"/>
                         <outlet property="viewPicker" destination="ipI-ZZ-WXQ" id="7bN-G3-rd9"/>
