@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let manager : ManagerPlaces = ManagerPlaces.shared()
         
+        
         //per mantenir coherència amb la crida
         let dataImage1 = UIImage(named: "cosmocaixa")!.pngData()
         let dataImage2 = UIImage(named: "sagradafamilia")!.pngData()

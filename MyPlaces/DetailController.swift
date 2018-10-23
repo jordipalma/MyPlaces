@@ -150,6 +150,7 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             pl.name = textName.text ?? ""
             pl.description = textDescription.text ?? ""
             
+            //m_provider.
             //TODO: actualitzar le place a través del manager no?
             
         }else{
@@ -172,7 +173,12 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             //afegim el place a través del ManagerPlaces
             m_provider.append(pl)
             
+            let manager = ManagerPlaces.shared()
+            manager.updateObservers()
         }
+        
+        //tornem a la tableView
+        dismiss(animated:true, completion: nil)
     }
     
     
@@ -181,13 +187,21 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         //Fem servir el mètode remove de ManagerPlaces passant com a paràmetre place
         if self.place != nil {
             m_provider.remove(self.place!)
+
+            let manager = ManagerPlaces.shared()
+            manager.updateObservers()
+            
+            //tornem a la tableView
+            dismiss(animated:true, completion: nil)
         }
     }
     
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
         print("cancelButtonPressed")
-        dismiss(animated: true, completion: nil)
+        
+        //tornem a la tableView
+        dismiss(animated:true, completion: nil)
     }
     
     

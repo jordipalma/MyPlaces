@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UITableViewController {
+class FirstViewController: UITableViewController, ManagerPlacesObserver {
 
     let m_provider:ManagerPlaces = ManagerPlaces.shared()
 
@@ -18,6 +18,11 @@ class FirstViewController: UITableViewController {
         let view: UITableView = (self.view as? UITableView)!;
         view.delegate = self
         view.dataSource = self
+        
+        //afegim el propi controlador a la llista d'observadors.
+        let manager = ManagerPlaces.shared()
+        manager.addObserver(object:self)
+
         
     }
 
@@ -42,8 +47,6 @@ class FirstViewController: UITableViewController {
         let p = m_provider.GetItemAt(position: indexPath.row)
         
         print("Element seleccionat a la llista: " + p.name)
-        
-        //TODO: Pendent de fer el segue al detall.
         
         let dc:DetailController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailController") as! DetailController
         dc.place = p
@@ -86,6 +89,13 @@ class FirstViewController: UITableViewController {
         
         
         return cell
+    }
+    
+    //
+    
+    func onPlacesChange() {
+        let view: UITableView = (self.view as? UITableView)!
+        view.reloadData()
     }
 
 }
