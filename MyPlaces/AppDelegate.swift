@@ -19,17 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let manager : ManagerPlaces = ManagerPlaces.shared()
         
-        
+        /*
         //per mantenir coherència amb la crida
         let dataImage1 = UIImage(named: "cosmocaixa")!.pngData()
         let dataImage2 = UIImage(named: "sagradafamilia")!.pngData()
         
+        
+        
         let pl = Place(name: "CosmoCaixa", description: "More info", image_in: dataImage1 )
+        pl.location = ManagerLocation.GetLocation()
         let p2 = Place(type: Place.PlacesTypes.TouristicPlace, name: "Sagrada Família", description: "More info 2", image_in: dataImage2 )
+        p2.location = ManagerLocation.GetLocation()
         
         manager.append(pl)
         manager.append(p2)
-        
+        */
         
         return true
     }

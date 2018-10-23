@@ -27,6 +27,8 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     
     var place:Place? = nil
+    
+    
     let m_provider:ManagerPlaces = ManagerPlaces.shared()
     
     
@@ -143,16 +145,11 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         //en funció de si tenim place o no sabrem si és un update o un new
         if place != nil {
             print("updateButtonPressed")
-            //De moment només permetem modificar name i description
-            //IMPORTANT: En una primera fase de les modificacions no permetrem canviar el tipus del place ni la imatge
             
-            let pl = m_provider.GetItemById(id: self.place!.id)
-            pl.name = textName.text ?? ""
-            pl.description = textDescription.text ?? ""
-            
-            //m_provider.
-            //TODO: actualitzar le place a través del manager no?
-            
+            //com que es tracta d'una referència, si actualitzem aquí també s'actualitza a l'array del manager
+            place!.name = textName.text ?? ""
+            place!.description = textDescription.text ?? ""
+
         }else{
             print("newButtonPressed")
             //creem un nou place
@@ -172,10 +169,8 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             
             //afegim el place a través del ManagerPlaces
             m_provider.append(pl)
-            
-            let manager = ManagerPlaces.shared()
-            manager.updateObservers()
         }
+        m_provider.updateObservers()
         
         //tornem a la tableView
         dismiss(animated:true, completion: nil)
@@ -188,8 +183,7 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         if self.place != nil {
             m_provider.remove(self.place!)
 
-            let manager = ManagerPlaces.shared()
-            manager.updateObservers()
+            m_provider.updateObservers()
             
             //tornem a la tableView
             dismiss(animated:true, completion: nil)
@@ -221,16 +215,30 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     // *************************************************************
     // * UIImagePickerControllerDelegate
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // Local variable inserted by Swift 4.2 migrator.
-        //let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+    
+    
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
+        let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+        let image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
         view.endEditing(true)
-        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imagePicked.contentMode = .scaleAspectFit
         imagePicked.image = image
         dismiss(animated:true, completion: nil)
     }
+    
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        dismiss(animated:true, completion: nil) }
+        dismiss(animated:true, completion: nil)
+    }
+    
+    // Helper function inserted by Swift 4.2 migrator.
+    private func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+        return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+    }
+    
+    // Helper function inserted by Swift 4.2 migrator.
+    private func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+        return input.rawValue
+    }
     
 }

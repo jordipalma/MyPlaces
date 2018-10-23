@@ -93,6 +93,7 @@ class ManagerPlaces: Codable{
         m_observers.forEach{ ob in
             ob.onPlacesChange()
         }
+        self.store()
     }
     
     func store() {

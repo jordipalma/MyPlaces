@@ -20,10 +20,9 @@ class FirstViewController: UITableViewController, ManagerPlacesObserver {
         view.dataSource = self
         
         //afegim el propi controlador a la llista d'observadors.
-        let manager = ManagerPlaces.shared()
-        manager.addObserver(object:self)
+        //let manager = ManagerPlaces.shared()
+        m_provider.addObserver(object:self)
 
-        
     }
 
 
@@ -51,7 +50,6 @@ class FirstViewController: UITableViewController, ManagerPlacesObserver {
         let dc:DetailController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailController") as! DetailController
         dc.place = p
         present(dc, animated: true, completion: nil)
-        
         
         
     }
@@ -82,11 +80,11 @@ class FirstViewController: UITableViewController, ManagerPlacesObserver {
         label.text = p.name
         label.sizeToFit()
         cell.contentView.addSubview(label)
-        
-        let imageIcon: UIImageView = UIImageView(image: UIImage(data: p.image!))
-        imageIcon.frame = CGRect(x:5, y:5, width:90, height:90)
-        cell.contentView.addSubview(imageIcon)
-        
+        if p.image != nil {
+            let imageIcon: UIImageView = UIImageView(image: UIImage(data: p.image!))
+            imageIcon.frame = CGRect(x:5, y:5, width:90, height:90)
+            cell.contentView.addSubview(imageIcon)
+        }
         
         return cell
     }
