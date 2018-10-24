@@ -80,11 +80,13 @@ class FirstViewController: UITableViewController, ManagerPlacesObserver {
         label.text = p.name
         label.sizeToFit()
         cell.contentView.addSubview(label)
-        if p.image != nil {
-            let imageIcon: UIImageView = UIImageView(image: UIImage(data: p.image!))
-            imageIcon.frame = CGRect(x:5, y:5, width:90, height:90)
-            cell.contentView.addSubview(imageIcon)
-        }
+
+        //agafem la imatge del FileSystem.
+        //let imageIcon: UIImageView = UIImageView(image: UIImage(data: p.image!))
+        let imageIcon = UIImageView(image: UIImage(contentsOfFile: m_provider.GetPathImage(p: p)))
+        
+        imageIcon.frame = CGRect(x:5, y:5, width:90, height:90)
+        cell.contentView.addSubview(imageIcon)
         
         return cell
     }

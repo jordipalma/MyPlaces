@@ -103,6 +103,7 @@ class ManagerPlaces: Codable{
             for place in places {
                 if(place.image != nil){
                     FileSystem.WriteData(id:place.id,image:place.image!)
+                    print(GetPathImage(p: place))
                     place.image = nil;
                 }
             }
