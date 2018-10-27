@@ -81,11 +81,12 @@ class FirstViewController: UITableViewController, ManagerPlacesObserver {
         label.sizeToFit()
         cell.contentView.addSubview(label)
 
-        //agafem la imatge del FileSystem.
-        //let imageIcon: UIImageView = UIImageView(image: UIImage(data: p.image!))
-        var image = UIImage(contentsOfFile: m_provider.GetPathImage(p: p))
-        if image == nil {
-            image = UIImage(named: "placeholder")
+        //Si el place té imatge agafem la imatge del FileSystem, si no li posem un placeholder
+        var image: UIImage
+        if p.hasImage{
+            image = UIImage(contentsOfFile: m_provider.GetPathImage(p: p))!
+        }else{
+            image = UIImage(named: "placeholder")!
         }
         
         let imageIcon = UIImageView(image: image)

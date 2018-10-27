@@ -183,6 +183,7 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             let name = textName.text ?? ""
             let descrip = textDescription.text ?? ""
             var data:Data? = nil
+            
             if imagePicked.image != nil {
                 data = imagePicked.image!.jpegData(compressionQuality: 1.0)
             }
