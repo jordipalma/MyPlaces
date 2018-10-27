@@ -22,7 +22,7 @@ class FirstViewController: UITableViewController, ManagerPlacesObserver {
         //afegim el propi controlador a la llista d'observadors.
         //let manager = ManagerPlaces.shared()
         m_provider.addObserver(object:self)
-
+        
     }
 
 

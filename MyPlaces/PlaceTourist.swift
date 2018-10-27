@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class PlaceTourist: Place{
     
     var discount_tourist: String = ""

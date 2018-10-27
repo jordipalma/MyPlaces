@@ -186,7 +186,15 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             if imagePicked.image != nil {
                 data = imagePicked.image!.jpegData(compressionQuality: 1.0)
             }
-            let pl = Place(type: type, name: name, description: descrip, image_in: data)
+            
+            var pl:Place
+            switch type{
+            case .GenericPlace:
+                pl = Place(type: type, name: name, description: descrip, image_in: data)
+            case .TouristicPlace:
+                pl = PlaceTourist(name: name, description: descrip, discount_tourist: "10?", image_in: data)
+            }
+            
             pl.location = ManagerLocation.GetLocation()
             
             //actualitzem la propietat
