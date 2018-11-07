@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let manager : ManagerPlaces = ManagerPlaces.shared()
+        let managerPlaces : ManagerPlaces = ManagerPlaces.shared()
+        let managerLocation : ManagerLocation = ManagerLocation.shared()
         
         /*
         //per mantenir coherència amb la crida

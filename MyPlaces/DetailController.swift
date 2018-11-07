@@ -32,6 +32,7 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     
     let m_provider:ManagerPlaces = ManagerPlaces.shared()
+    let m_location_manager:ManagerLocation = ManagerLocation.shared()
     
     
     
@@ -43,11 +44,22 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         viewPicker.delegate = self
         viewPicker.dataSource = self
 
+        
+        //configurem imageView
+        imagePicked.contentMode = .scaleAspectFit
+        
         //complimentem les dades del Place seleccionat
         if place != nil {
             textName.text = place!.name
             textDescription.text = place!.description
             viewPicker.selectRow(place!.type.rawValue, inComponent: 0, animated: true)
+            
+            if place!.hasImage{
+                imagePicked.image = UIImage(contentsOfFile: m_provider.GetPathImage(p: place!))
+            }else{
+                imagePicked.image = UIImage(named: "placeholder")
+            }
+            
         }else{
             //es tractarà d'un nou place. Canviem els noms.
             btnUpdate.setTitle("New", for: .normal)
@@ -174,6 +186,10 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
             //com que es tracta d'una referència, si actualitzem aquí també s'actualitza a l'array del manager
             place!.name = textName.text ?? ""
             place!.description = textDescription.text ?? ""
+            
+            //haurem d'actualitzar se el place té imatge o no
+            //pl.hasImage
+            
 
         }else{
             print("newButtonPressed")
@@ -252,7 +268,6 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         view.endEditing(true)
-        imagePicked.contentMode = .scaleAspectFit
         imagePicked.image = image
         dismiss(animated:true, completion: nil)
     }
