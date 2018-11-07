@@ -212,7 +212,7 @@ class DetailController: UIViewController, UIPickerViewDelegate, UIPickerViewData
                 pl = PlaceTourist(name: name, description: descrip, discount_tourist: "10?", image_in: data)
             }
             
-            pl.location = ManagerLocation.GetLocation()
+            pl.location = m_location_manager.getLocation()
             
             //actualitzem la propietat
             self.place = pl

@@ -63,7 +63,7 @@ class ManagerLocation: NSObject, CLLocationManagerDelegate
     }
     
     //Per obtenir la posició des del CLLocationManager
-    public func GetLocation()->CLLocationCoordinate2D {
+    public func getLocation()->CLLocationCoordinate2D {
         return (self.m_locationManager!.location?.coordinate)!
     }
     /*
