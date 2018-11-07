@@ -20,6 +20,7 @@
 		A35B8DA12154211200DF3AC6 /* PlaceTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */; };
 		A35B8DA72158EE9500DF3AC6 /* cosmocaixa.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */; };
 		A35B8DA92158F76200DF3AC6 /* sagradafamilia.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */; };
+		A36322A32193438E004A9F38 /* MKMyPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */; };
 		A3AAA76B2175E93400297351 /* ManagerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AAA76A2175E93400297351 /* ManagerLocation.swift */; };
 		A3D73C83217A3A7A008E599E /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D73C82217A3A7A008E599E /* FileSystem.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTourist.swift; sourceTree = "<group>"; };
 		A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosmocaixa.png; sourceTree = "<group>"; };
 		A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sagradafamilia.png; sourceTree = "<group>"; };
+		A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMyPointAnnotation.swift; sourceTree = "<group>"; };
 		A3AAA76A2175E93400297351 /* ManagerLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerLocation.swift; sourceTree = "<group>"; };
 		A3D73C82217A3A7A008E599E /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				A35B8DA02154211200DF3AC6 /* PlaceTourist.swift */,
 				A3AAA76A2175E93400297351 /* ManagerLocation.swift */,
 				A3D73C82217A3A7A008E599E /* FileSystem.swift */,
+				A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35B8D982153C25B00DF3AC6 /* DetailController.swift in Sources */,
+				A36322A32193438E004A9F38 /* MKMyPointAnnotation.swift in Sources */,
 				A3D73C83217A3A7A008E599E /* FileSystem.swift in Sources */,
 				A35B8DA12154211200DF3AC6 /* PlaceTourist.swift in Sources */,
 				A35B8D9F2153F5F800DF3AC6 /* ManagerPlaces.swift in Sources */,
