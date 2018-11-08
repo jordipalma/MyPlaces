@@ -249,7 +249,7 @@
         <scene sceneID="dA4-uK-PL9">
             <objects>
                 <navigationController id="f3i-wn-jG6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" image="first" id="bNY-cM-EZ4"/>
+                    <tabBarItem key="tabBarItem" title="List" image="icon-book" id="bNY-cM-EZ4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="83n-QM-3yP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -264,7 +264,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="icon-book" width="25" height="25"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>

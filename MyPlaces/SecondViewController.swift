@@ -14,10 +14,10 @@ class SecondViewController: UIViewController, MKMapViewDelegate, ManagerPlacesOb
     @IBOutlet weak var m_map: MKMapView!
     let m_provider:ManagerPlaces = ManagerPlaces.shared()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        m_map.delegate = self
         
         m_provider.addObserver(object:self)
         addMarkers()

@@ -11,7 +11,6 @@
 		A35B8D862153BCFA00DF3AC6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8D852153BCFA00DF3AC6 /* FirstViewController.swift */; };
 		A35B8D882153BCFA00DF3AC6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8D872153BCFA00DF3AC6 /* SecondViewController.swift */; };
 		A35B8D8B2153BCFA00DF3AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35B8D892153BCFA00DF3AC6 /* Main.storyboard */; };
-		A35B8D8D2153BCFC00DF3AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35B8D8C2153BCFC00DF3AC6 /* Assets.xcassets */; };
 		A35B8D902153BCFC00DF3AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35B8D8E2153BCFC00DF3AC6 /* LaunchScreen.storyboard */; };
 		A35B8D982153C25B00DF3AC6 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B8D972153C25B00DF3AC6 /* DetailController.swift */; };
 		A35B8D9B2153C35000DF3AC6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35B8D9A2153C35000DF3AC6 /* MapKit.framework */; };
@@ -21,6 +20,7 @@
 		A35B8DA72158EE9500DF3AC6 /* cosmocaixa.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */; };
 		A35B8DA92158F76200DF3AC6 /* sagradafamilia.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */; };
 		A36322A32193438E004A9F38 /* MKMyPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */; };
+		A3A4E48E2194C37300DBE41F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A4E48D2194C37300DBE41F /* Assets.xcassets */; };
 		A3AAA76B2175E93400297351 /* ManagerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AAA76A2175E93400297351 /* ManagerLocation.swift */; };
 		A3D73C83217A3A7A008E599E /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D73C82217A3A7A008E599E /* FileSystem.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,6 @@
 		A35B8D852153BCFA00DF3AC6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A35B8D872153BCFA00DF3AC6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A35B8D8A2153BCFA00DF3AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A35B8D8C2153BCFC00DF3AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35B8D8F2153BCFC00DF3AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A35B8D912153BCFC00DF3AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35B8D972153C25B00DF3AC6 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		A35B8DA62158EE9500DF3AC6 /* cosmocaixa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosmocaixa.png; sourceTree = "<group>"; };
 		A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sagradafamilia.png; sourceTree = "<group>"; };
 		A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMyPointAnnotation.swift; sourceTree = "<group>"; };
+		A3A4E48D2194C37300DBE41F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3AAA76A2175E93400297351 /* ManagerLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerLocation.swift; sourceTree = "<group>"; };
 		A3D73C82217A3A7A008E599E /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +84,6 @@
 				A35B8D852153BCFA00DF3AC6 /* FirstViewController.swift */,
 				A35B8D872153BCFA00DF3AC6 /* SecondViewController.swift */,
 				A35B8D892153BCFA00DF3AC6 /* Main.storyboard */,
-				A35B8D8C2153BCFC00DF3AC6 /* Assets.xcassets */,
 				A35B8D8E2153BCFC00DF3AC6 /* LaunchScreen.storyboard */,
 				A35B8D912153BCFC00DF3AC6 /* Info.plist */,
 				A35B8D972153C25B00DF3AC6 /* DetailController.swift */,
@@ -94,6 +93,7 @@
 				A3AAA76A2175E93400297351 /* ManagerLocation.swift */,
 				A3D73C82217A3A7A008E599E /* FileSystem.swift */,
 				A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */,
+				A3A4E48D2194C37300DBE41F /* Assets.xcassets */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -175,8 +175,8 @@
 				A35B8DA72158EE9500DF3AC6 /* cosmocaixa.png in Resources */,
 				A35B8D902153BCFC00DF3AC6 /* LaunchScreen.storyboard in Resources */,
 				A35B8DA92158F76200DF3AC6 /* sagradafamilia.png in Resources */,
-				A35B8D8D2153BCFC00DF3AC6 /* Assets.xcassets in Resources */,
 				A35B8D8B2153BCFA00DF3AC6 /* Main.storyboard in Resources */,
+				A3A4E48E2194C37300DBE41F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
