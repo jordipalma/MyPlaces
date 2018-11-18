@@ -21,6 +21,9 @@
 		A35B8DA92158F76200DF3AC6 /* sagradafamilia.png in Resources */ = {isa = PBXBuildFile; fileRef = A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */; };
 		A36322A32193438E004A9F38 /* MKMyPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */; };
 		A3A4E48E2194C37300DBE41F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A4E48D2194C37300DBE41F /* Assets.xcassets */; };
+		A3A4E4932195B49200DBE41F /* ManresaTour.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A3A4E4922195B49200DBE41F /* ManresaTour.gpx */; };
+		A3A4E4952195B4B600DBE41F /* barcelona.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A3A4E4942195B4B600DBE41F /* barcelona.gpx */; };
+		A3A4E4972195CD3A00DBE41F /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4E4962195CD3A00DBE41F /* AppUtils.swift */; };
 		A3AAA76B2175E93400297351 /* ManagerLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AAA76A2175E93400297351 /* ManagerLocation.swift */; };
 		A3D73C83217A3A7A008E599E /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D73C82217A3A7A008E599E /* FileSystem.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		A35B8DA82158F76100DF3AC6 /* sagradafamilia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sagradafamilia.png; sourceTree = "<group>"; };
 		A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMyPointAnnotation.swift; sourceTree = "<group>"; };
 		A3A4E48D2194C37300DBE41F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3A4E4922195B49200DBE41F /* ManresaTour.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ManresaTour.gpx; sourceTree = "<group>"; };
+		A3A4E4942195B4B600DBE41F /* barcelona.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = barcelona.gpx; sourceTree = "<group>"; };
+		A3A4E4962195CD3A00DBE41F /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		A3AAA76A2175E93400297351 /* ManagerLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerLocation.swift; sourceTree = "<group>"; };
 		A3D73C82217A3A7A008E599E /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +67,8 @@
 		A35B8D772153BCFA00DF3AC6 = {
 			isa = PBXGroup;
 			children = (
+				A3A4E4922195B49200DBE41F /* ManresaTour.gpx */,
+				A3A4E4942195B4B600DBE41F /* barcelona.gpx */,
 				A35B8D822153BCFA00DF3AC6 /* MyPlaces */,
 				A35B8D812153BCFA00DF3AC6 /* Products */,
 				A35B8D992153C35000DF3AC6 /* Frameworks */,
@@ -94,6 +102,7 @@
 				A3D73C82217A3A7A008E599E /* FileSystem.swift */,
 				A36322A22193438E004A9F38 /* MKMyPointAnnotation.swift */,
 				A3A4E48D2194C37300DBE41F /* Assets.xcassets */,
+				A3A4E4962195CD3A00DBE41F /* AppUtils.swift */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -177,6 +186,8 @@
 				A35B8DA92158F76200DF3AC6 /* sagradafamilia.png in Resources */,
 				A35B8D8B2153BCFA00DF3AC6 /* Main.storyboard in Resources */,
 				A3A4E48E2194C37300DBE41F /* Assets.xcassets in Resources */,
+				A3A4E4952195B4B600DBE41F /* barcelona.gpx in Resources */,
+				A3A4E4932195B49200DBE41F /* ManresaTour.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35B8D982153C25B00DF3AC6 /* DetailController.swift in Sources */,
+				A3A4E4972195CD3A00DBE41F /* AppUtils.swift in Sources */,
 				A36322A32193438E004A9F38 /* MKMyPointAnnotation.swift in Sources */,
 				A3D73C83217A3A7A008E599E /* FileSystem.swift in Sources */,
 				A35B8DA12154211200DF3AC6 /* PlaceTourist.swift in Sources */,

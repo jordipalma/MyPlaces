@@ -36,6 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         manager.append(p2)
         */
         
+        
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = UIColor.white
+        navigationBarAppearace.barTintColor = AppUtils.colorPrincipal
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
         return true
     }
 

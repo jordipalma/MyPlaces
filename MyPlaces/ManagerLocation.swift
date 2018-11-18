@@ -33,7 +33,7 @@ class ManagerLocation: NSObject, CLLocationManagerDelegate{
             // Permitir updates en background
             singletonManager!.m_locationManager.allowsBackgroundLocationUpdates = true
             // Minima distancia para que detecte cambio de posición = 500 metros
-            singletonManager!.m_locationManager.distanceFilter = 500
+            singletonManager!.m_locationManager.distanceFilter = 10
             // Que use la forma más optima para calcular la geolocalización.
             singletonManager!.m_locationManager.desiredAccuracy = kCLLocationAccuracyBest
             
@@ -42,7 +42,6 @@ class ManagerLocation: NSObject, CLLocationManagerDelegate{
                 singletonManager!.m_locationManager.requestWhenInUseAuthorization()
                 
             }else{
-                singletonManager!.m_locationManager.startUpdatingLocation()
                 singletonManager!.startLocation()
             }
             
@@ -63,10 +62,22 @@ class ManagerLocation: NSObject, CLLocationManagerDelegate{
         self.m_locationManager.startUpdatingLocation()
     }
     
+    
+   
     //Per obtenir la posició des del CLLocationManager
     public func getLocation()->CLLocationCoordinate2D {
         return (self.m_locationManager!.location?.coordinate)!
     }
+    
+
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("\(locations)")
+    }
+    
+    
+    
+    
     /*
     static func GetLocation()->CLLocationCoordinate2D
     {

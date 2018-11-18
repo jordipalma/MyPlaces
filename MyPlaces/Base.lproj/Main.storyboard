@@ -13,6 +13,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -196,7 +197,7 @@
         <scene sceneID="vIx-hx-qLX">
             <objects>
                 <navigationController id="uwZ-qj-PRq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="second" id="cwx-Rp-kkL"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="icon-map" id="cwx-Rp-kkL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Kr-Ob-e9j">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -265,9 +266,9 @@
     </scenes>
     <resources>
         <image name="icon-book" width="25" height="25"/>
-        <image name="second" width="30" height="30"/>
+        <image name="icon-map" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K55-Dn-1DO"/>
+        <segue reference="yn2-v6-pT3"/>
     </inferredMetricsTieBreakers>
 </document>
